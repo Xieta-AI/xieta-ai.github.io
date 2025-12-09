@@ -1192,6 +1192,22 @@
     transition: filter 0.3s ease;
 }
 
+/* Product cards - restore color on hover */
+.product-card:hover,
+.product-card:hover * {
+    filter: grayscale(0%) !important;
+}
+
+/* Vision/Team/Feature cards - restore color on hover */
+.vision-card:hover,
+.vision-card:hover *,
+.team-card:hover,
+.team-card:hover *,
+.feature-card:hover,
+.feature-card:hover * {
+    filter: grayscale(0%) !important;
+}
+
 /* Enhanced image hover effects */
 img:hover,
 .business-logo-img:hover {
