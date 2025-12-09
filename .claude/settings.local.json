@@ -11,7 +11,8 @@
       "mcp__playwright__browser_evaluate",
       "mcp__playwright__browser_resize",
       "mcp__playwright__browser_hover",
-      "Bash(timeout 30 playwright screenshot:*)"
+      "Bash(timeout 30 playwright screenshot:*)",
+      "Bash(findstr:*)"
     ],
     "deny": []
   }

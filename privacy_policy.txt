@@ -2,8 +2,8 @@
 **Effective date: 29 July 2025**
 
 ## 1  Introduction  
-Xieta AI Private Limited (“**Xieta**”, **“we”**, **“our”** or **“us”**) is a company registered in Chandigarh, India. We operate this marketing website (the **“Site”**) to introduce our AI-powered products—beginning with **AskTranslator**—and to let visitors join wait-lists or get in touch.  
-This notice explains what personal information we collect on the Site, how we use it, and the choices you have. A separate privacy notice will apply on any product website (e.g., AskTranslator) once you sign up or upload documents there.
+Xieta AI Private Limited ("**Xieta**", **"we"**, **"our"** or **"us"**) is a company registered in Chandigarh, India. We operate this marketing website (the **"Site"**) to introduce our AI-powered products—beginning with **AskTranslator** (expert legal translation and document processing for Punjabi legal documents)—and to let visitors get in touch.
+This notice explains what personal information we collect on the Site, how we use it, and the choices you have. A separate privacy notice will apply on any product website (e.g., AskTranslator at www.asktranslator.com) once you sign up or upload documents there.
 
 ---
 
@@ -38,7 +38,7 @@ We do **not** sell or rent your personal information. We may share it only:
 2. **Business transfers** – if we reorganise or sell our business, data may transfer to the new owner under the same protections.  
 3. **Legal reasons** – to comply with lawful requests or defend our rights.  
 4. **Product improvement** – aggregated, de-identified usage insights may be shared internally with Xieta’s product teams to help **make our AI tools more accurate and user-friendly**.  
-5. **External links** – the Site links to third-party pages (e.g., the AskTranslator portal). Their privacy practices apply on those sites.
+5. **External links** – the Site links to third-party pages (e.g., the AskTranslator portal at www.asktranslator.com). Their privacy practices apply on those sites.
 
 ---
 

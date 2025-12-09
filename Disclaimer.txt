@@ -33,7 +33,7 @@ Any case studies, testimonials or sample translations shown on the Site illustra
 Pages on this Site may contain forward‑looking statements about our plans, goals or expected product features. Actual results and timelines may differ materially due to development priorities, regulatory changes or other factors. Xieta AI undertakes no obligation to update such statements.
 
 ## 9  Translation‑accuracy disclaimer  
-AskTranslator and other AI translation tools showcased on the Site are intended to assist, not replace, human expertise. For critical documents—especially legal, medical or technical materials—**you should have a qualified professional review any AI‑generated translation** before relying on it.
+AskTranslator (our expert legal translation and document processing tool for Punjabi legal documents, available at www.asktranslator.com) and other AI translation tools showcased on the Site are intended to assist, not replace, human expertise. For critical documents—especially legal, medical or technical materials—**you should have a qualified professional review any AI‑generated translation** before relying on it.
 
 ## 10  User‑generated content  
 If the Site allows comments, reviews or other user submissions, you are solely responsible for any content you post. We reserve the right (but have no obligation) to monitor, edit or remove user‑generated content that we deem inappropriate or unlawful.
