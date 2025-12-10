@@ -1260,6 +1260,13 @@ nav:hover * {
     transition: filter 0.4s ease;
 }
 
+/* Disable grayscale effect on mobile devices */
+@media (max-width: 768px) {
+    *:not(.click-particle) {
+        filter: none !important;
+    }
+}
+
 /* Particles.js Background Styling */
 #particles-js {
     position: absolute;
