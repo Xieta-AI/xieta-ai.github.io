@@ -19,8 +19,10 @@ const LogoReveal = {
         // Play video
         video.play();
 
-        // Hide on video end
-        video.addEventListener('ended', () => this.hide());
+        // Hide on video end - hold last frame briefly for smoother feel
+        video.addEventListener('ended', () => {
+            setTimeout(() => this.hide(), 400);
+        });
 
         // Skip functionality - button click
         skipBtn?.addEventListener('click', () => this.hide());
