@@ -1,3 +1,58 @@
+// Logo Reveal Controller
+const LogoReveal = {
+    init() {
+        // Check if already shown this session
+        if (sessionStorage.getItem('logoRevealed')) {
+            this.hideImmediately();
+            return;
+        }
+
+        const overlay = document.getElementById('logo-reveal');
+        const video = document.getElementById('logo-video');
+        const skipBtn = document.querySelector('.skip-intro-btn');
+
+        if (!overlay || !video) return;
+
+        // Prevent scrolling while overlay is active
+        document.body.classList.add('logo-reveal-active');
+
+        // Play video
+        video.play();
+
+        // Hide on video end
+        video.addEventListener('ended', () => this.hide());
+
+        // Skip functionality - button click
+        skipBtn?.addEventListener('click', () => this.hide());
+
+        // Skip functionality - any keypress
+        document.addEventListener('keydown', (e) => {
+            if (!overlay.classList.contains('hidden')) {
+                this.hide();
+            }
+        }, { once: true });
+    },
+
+    hide() {
+        const overlay = document.getElementById('logo-reveal');
+        if (overlay && !overlay.classList.contains('hidden')) {
+            overlay.classList.add('hidden');
+            document.body.classList.remove('logo-reveal-active');
+            sessionStorage.setItem('logoRevealed', 'true');
+            // Remove from DOM after transition
+            setTimeout(() => overlay.remove(), 500);
+        }
+    },
+
+    hideImmediately() {
+        const overlay = document.getElementById('logo-reveal');
+        overlay?.remove();
+    }
+};
+
+// Initialize Logo Reveal on DOM ready
+document.addEventListener('DOMContentLoaded', () => LogoReveal.init());
+
 // Main JavaScript functionality
 document.addEventListener('DOMContentLoaded', function() {
     

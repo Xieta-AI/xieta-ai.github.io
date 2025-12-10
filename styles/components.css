@@ -1183,6 +1183,13 @@
     filter: grayscale(0%) !important;
 }
 
+/* Logo reveal - always show in color */
+.logo-reveal-overlay,
+.logo-reveal-overlay *,
+.logo-reveal-overlay video {
+    filter: grayscale(0%) !important;
+}
+
 /* Specific hover effects for business cards */
 .business-card:hover,
 .business-card:hover *,
