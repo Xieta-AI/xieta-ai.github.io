@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How curated tech pipelines are revolutionising vernacular legal document translation — replacing decades-old typist dependency for lawyers in Punjab and Haryana">
+    <meta name="keywords" content="AskTranslator, legal translation, Punjabi to English, Hindi to English, lawyers, FIR translation, court orders, Punjab Haryana High Court, legal tech, vernacular documents">
+    <meta name="author" content="Xieta AI">
+    <title>The Quiet Revolution in Legal Translation - Xieta AI</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        .navbar-scrolled {
+            background: rgba(255,255,255,0.98) !important;
+            box-shadow: 0 12px 48px rgba(0,0,0,0.12) !important;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem 4rem;
+        }
+
+        .article-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .article-back:hover {
+            color: #764ba2;
+            transform: translateX(-4px);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .article-tag {
+            background: rgba(102,126,234,0.1);
+            color: #667eea;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .article-date {
+            color: #A0AEC0;
+            font-size: 0.9rem;
+        }
+
+        .article-title {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            font-weight: 700;
+            color: #1a237e;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        .article-subtitle {
+            font-size: 1.3rem;
+            color: #4A5568;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        .article-body h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #2D3748;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-body p {
+            color: #4A5568;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-body strong {
+            color: #2D3748;
+        }
+
+        .article-image {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 12px 48px rgba(0,0,0,0.12);
+            margin: 2rem 0;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            border: 1px solid #E2E8F0;
+            font-size: 1rem;
+            color: #2D3748;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .feature-list li span {
+            font-size: 1.3rem;
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .impact-card {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .impact-card .impact-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .impact-card .impact-label {
+            font-size: 0.9rem;
+            color: #3949ab;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .impact-card .impact-value {
+            font-size: 1rem;
+            color: #1a237e;
+            font-weight: 500;
+        }
+
+        .story-block {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 2rem;
+            border-radius: 0 16px 16px 0;
+            margin: 2rem 0;
+        }
+
+        .story-block p {
+            color: #4A5568;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .story-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .article-cta {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+            border-radius: 24px;
+        }
+
+        .article-cta h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1a237e;
+            margin-bottom: 1rem;
+        }
+
+        .article-cta p {
+            color: #3949ab;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(102,126,234,0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(102,126,234,0.4);
+        }
+
+        @media (max-width: 600px) {
+            .article-container {
+                padding: 2rem 1rem 3rem;
+            }
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+            .impact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" style="background:rgba(255,255,255,0.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.2);box-shadow:0 8px 32px rgba(0,0,0,0.08);position:fixed;top:0;left:0;right:0;z-index:1000;transition:all 0.3s ease;">
+        <div class="nav-container" style="max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:80px;">
+            <div class="nav-logo">
+                <a href="home.html" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+                    <img src="assets/logo2.png" alt="Xieta AI Logo" style="height:40px;width:auto;filter:contrast(1.2) saturate(1.3) !important;opacity:1 !important;" />
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu" style="display:flex;align-items:center;gap:3rem;">
+                <a href="home.html" class="nav-link" style="color:#4A5568;font-weight:500;text-decoration:none;transition:all 0.3s ease;position:relative;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#4A5568'">Home</a>
+                <a href="products.html" class="nav-link" style="color:#4A5568;font-weight:500;text-decoration:none;transition:all 0.3s ease;position:relative;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#4A5568'">Products</a>
+                <a href="about.html" class="nav-link" style="color:#4A5568;font-weight:500;text-decoration:none;transition:all 0.3s ease;position:relative;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#4A5568'">Vision</a>
+                <a href="team.html" class="nav-link" style="color:#4A5568;font-weight:500;text-decoration:none;transition:all 0.3s ease;position:relative;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#4A5568'">Team</a>
+                <a href="blog.html" class="nav-link" style="color:#4A5568;font-weight:500;text-decoration:none;transition:all 0.3s ease;position:relative;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#4A5568'">Blog</a>
+                <a href="contact.html" class="nav-link" style="color:#4A5568;font-weight:500;text-decoration:none;transition:all 0.3s ease;position:relative;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#4A5568'">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle" style="display:none;flex-direction:column;gap:4px;cursor:pointer;">
+                <span class="bar" style="width:24px;height:3px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border-radius:2px;transition:all 0.3s ease;"></span>
+                <span class="bar" style="width:24px;height:3px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border-radius:2px;transition:all 0.3s ease;"></span>
+                <span class="bar" style="width:24px;height:3px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border-radius:2px;transition:all 0.3s ease;"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <section style="background:linear-gradient(135deg,#e3f2fd 0%,#bbdefb 50%,#90caf9 100%);padding-top:80px;padding-bottom:2rem;">
+        <div class="section-container">
+            <div style="text-align:center;">
+                <div style="display:inline-flex;align-items:center;background:rgba(26,35,126,0.1);backdrop-filter:blur(10px);border:1px solid rgba(26,35,126,0.2);border-radius:50px;padding:0.75rem 1.5rem;margin-bottom:2rem;font-size:0.95rem;font-weight:500;color:#1a237e;">
+                    <span style="margin-right:0.5rem;">⚖️</span>
+                    Case Study
+                </div>
+                <h1 style="font-size:clamp(2rem,5vw,3rem);font-weight:700;margin-bottom:1rem;color:#1a237e;max-width:800px;margin-left:auto;margin-right:auto;line-height:1.3;">The Quiet Revolution in Legal Translation: How Tech is Replacing the Typist's Desk</h1>
+                <p style="font-size:clamp(1.1rem,2.5vw,1.3rem);font-weight:500;color:#3949ab;max-width:700px;margin:0 auto 1rem;line-height:1.5;">For decades, lawyers in Punjab and Haryana depended on typists to translate vernacular legal documents. A new tool built on curated technology pipelines is changing that — one page at a time.</p>
+                <span style="color:#5c6bc0;font-size:0.95rem;">February 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section style="background:linear-gradient(135deg,#ffffff 0%,#f8f9fa 100%);">
+        <div class="article-container">
+            <a href="blog.html" class="article-back">← Back to Blog</a>
+
+            <div class="article-body">
+                <h2>A System That Hasn't Changed in Decades</h2>
+                <p>Walk into any district court complex in Punjab or Haryana and you'll find them — rows of typists sitting outside courtrooms, surrounded by stacks of Punjabi and Hindi documents waiting to be translated into English. FIRs, Challans, Court Orders, Government Letters, Revenue Records. The legal system runs on these documents, and English translations are required at nearly every stage of proceedings.</p>
+                <p>For decades, this translation work has been handled the same way: a lawyer hands over the document, the typist reads through it, and types out an English version — sometimes over hours, sometimes over days. It's a manual, labour-intensive process that hasn't fundamentally changed since the courts were established.</p>
+                <p>The bottlenecks are well-known to anyone who practises law in the region:</p>
+                <ul style="list-style:none;padding:0;margin:0 0 1.5rem;">
+                    <li style="color:#4A5568;line-height:1.8;font-size:1.1rem;padding:0.3rem 0;"><strong>Turnaround time</strong> ranges from a few hours to a full day, depending on the typist's workload</li>
+                    <li style="color:#4A5568;line-height:1.8;font-size:1.1rem;padding:0.3rem 0;"><strong>Costs accumulate</strong> quickly — large case files with dozens of pages can run into thousands of rupees in translation fees alone</li>
+                    <li style="color:#4A5568;line-height:1.8;font-size:1.1rem;padding:0.3rem 0;"><strong>Availability is limited</strong> — typists work fixed hours, and urgent requirements outside those hours simply go unmet</li>
+                    <li style="color:#4A5568;line-height:1.8;font-size:1.1rem;padding:0.3rem 0;"><strong>Quality varies</strong> — accuracy depends entirely on the individual typist's grasp of legal terminology in both languages</li>
+                </ul>
+                <p>The downstream effect is significant. A delayed translation can mean a missed filing deadline, a postponed hearing, or a client left waiting with no update. In a system where time already moves slowly, these delays compound.</p>
+
+                <h2>A Different Approach: Curated Tech Pipelines for Vernacular Legal Documents</h2>
+                <p>This is the problem that <strong>AskTranslator</strong>, built by Chandigarh-based tech company Xieta, set out to solve — not with a generic translation tool, but with something purpose-built for the specific challenges of vernacular legal document translation.</p>
+                <p>What makes AskTranslator different from general-purpose translation services is its architecture. Rather than relying on a single model to handle everything, the system uses <strong>curated, multi-stage pipelines</strong> — each stage optimised for a specific part of the translation process. Document parsing, script recognition, legal terminology mapping, contextual translation, and formatted output are handled as distinct steps, with the best available technology applied at each stage.</p>
+                <p>This pipeline approach is what allows the system to handle the peculiarities of Punjabi legal documents — the Gurmukhi script, the mix of legal Punjabi with Urdu-origin terminology, the specific formatting conventions of FIRs and Challans — with a level of accuracy that generic translators simply can't match.</p>
+
+                <img src="images/image.png" alt="AskTranslator interface showing legal translation capabilities for Punjabi and Hindi documents" class="article-image" loading="lazy">
+
+                <p>The output is a clean MS Word document that lawyers can directly attach to their filings. The pricing — upto ₹25 per page — is a fraction of what most typists charge, and the service runs around the clock.</p>
+
+                <ul class="feature-list">
+                    <li><span>💰</span> Upto ₹25 per page</li>
+                    <li><span>⚡</span> Translations in minutes</li>
+                    <li><span>🎯</span> Legal-level accuracy</li>
+                    <li><span>🕐</span> Available 24 hours</li>
+                    <li><span>📄</span> MS Word output</li>
+                    <li><span>🗣️</span> Punjabi & Hindi specialist</li>
+                </ul>
+
+                <h2>On the Ground: How One Advocate's Workflow Changed</h2>
+                <p>To understand what this shift looks like in practice, consider the experience of one advocate who practises regularly at the Punjab & Haryana High Court. He agreed to share his account on the condition of anonymity.</p>
+                <div class="story-block">
+                    <p>"Every week, I deal with multiple cases that involve FIRs, Challans, and other documents in Punjabi. For years, the routine was the same — take the documents to the typist, wait, collect the translation, check it, and then file. If the typist was overloaded, I'd lose a day. If I needed something translated urgently on a weekend or late evening, I was out of luck."</p>
+                    <p>"The first time I used AskTranslator, I uploaded a 6-page FIR in Punjabi. The English translation came back in under 2 minutes. I went through it carefully — the legal terminology was accurate, the structure was preserved, and the formatting was clean enough to attach directly to my filing."</p>
+                    <p>"What changed for me wasn't just the speed or the cost. It was the independence. I no longer plan my work around someone else's schedule. I can prepare case files at midnight if I need to. That kind of flexibility didn't exist before."</p>
+                    <p style="font-style:normal;color:#A0AEC0;font-size:0.95rem;">— Practising Advocate, Punjab & Haryana High Court</p>
+                </div>
+                <p>His experience is not unique. AskTranslator has been gaining traction among lawyers across the Punjab and Haryana court system, particularly among those who handle high volumes of vernacular documents.</p>
+
+                <h2>Why This Matters</h2>
+                <p>The significance of what's happening here goes beyond convenience. Vernacular legal document translation has been one of the last holdouts — a workflow so entrenched and so specific that technology hadn't been able to meaningfully address it until now.</p>
+                <p>General-purpose translation tools — Google Translate, for instance — fall short on legal documents because they don't understand the domain. Legal Punjabi is dense, formal, and full of terminology that doesn't have straightforward English equivalents. A mistranslation in an FIR or a Court Order isn't just an inconvenience — it can materially affect the outcome of a case.</p>
+                <p>What AskTranslator's curated pipeline approach demonstrates is that the path to solving these problems isn't necessarily a bigger model — it's a <strong>smarter architecture</strong>, one that breaks the problem into parts and applies the right tool at each stage. It's a design philosophy that prioritises precision over generality.</p>
+
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon">⚡</div>
+                        <div class="impact-label">Speed</div>
+                        <div class="impact-value">Minutes instead of hours or days</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon">💰</div>
+                        <div class="impact-label">Cost</div>
+                        <div class="impact-value">Upto ₹25/page vs traditional typist fees</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon">🕐</div>
+                        <div class="impact-label">Availability</div>
+                        <div class="impact-value">24/7, no scheduling dependency</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon">🎯</div>
+                        <div class="impact-label">Accuracy</div>
+                        <div class="impact-value">Consistent, domain-trained quality</div>
+                    </div>
+                </div>
+
+                <h2>What Comes Next</h2>
+                <p>AskTranslator is currently focused on Punjabi-to-English and Hindi-to-English legal translations — a deliberate choice to go deep rather than wide. The team at Xieta has indicated that the same pipeline architecture can be extended to other vernacular languages and other document-heavy professions, but for now the focus remains on getting legal translation right.</p>
+                <p>For the lawyers using it today, the shift is already tangible. A process that used to depend on another person's availability and skill now runs on demand, at any hour, for a fraction of the cost. It's not a dramatic, overnight disruption — it's a steady, practical change that's making the daily work of legal practice a little less burdened by logistics.</p>
+                <p>And in a profession where time is always short and paperwork is never-ending, that turns out to matter quite a lot.</p>
+
+                <div class="article-cta">
+                    <h3>AskTranslator is available now</h3>
+                    <p>Punjabi-to-English and Hindi-to-English legal document translation.</p>
+                    <a href="https://www.asktranslator.com" target="_blank" class="cta-button">
+                        Visit AskTranslator
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #f8f9fa; border-top: 1px solid #e9ecef; padding: 20px 0;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: flex-end;">
+            <div style="display: flex; gap: 2rem;">
+                <a href="privacy.html" style="color: #6c757d; text-decoration: none; font-size: 0.9rem; transition: color 0.3s ease;" onmouseover="this.style.color='#1a237e'" onmouseout="this.style.color='#6c757d'">Privacy Policy</a>
+                <a href="disclaimer.html" style="color: #6c757d; text-decoration: none; font-size: 0.9rem; transition: color 0.3s ease;" onmouseover="this.style.color='#1a237e'" onmouseout="this.style.color='#6c757d'">Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/interactions.js"></script>
+</body>
+</html>
