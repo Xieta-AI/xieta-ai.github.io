@@ -32,23 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Mobile menu toggle (delegated event handling)
-    document.addEventListener('click', function(e) {
-        if (e.target.matches('#nav-toggle') || e.target.closest('#nav-toggle')) {
-            const navMenu = document.getElementById('nav-menu');
-            if (navMenu) {
-                navMenu.classList.toggle('active');
-            }
-        }
-
-        // Close menu when clicking on links
-        if (e.target.matches('.nav-link')) {
-            const navMenu = document.getElementById('nav-menu');
-            if (navMenu) {
-                navMenu.classList.remove('active');
-            }
-        }
-    });
+    // Mobile menu toggle is handled by main.js (nav-toggle click handler)
+    // Do not add a duplicate handler here to avoid double-toggling
 
     // Smooth scroll to sections
     document.addEventListener('click', function(e) {
